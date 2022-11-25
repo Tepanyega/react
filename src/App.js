@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import List from "./components/List";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+
+  return(
+    <div>
+    <div className="heading">
+      <h1>My Project List</h1>
+
+    </div>
+     
+     <div className="cards">
+
+<h3>
+  
+
+     
+   <List text="Learning javascript" purpose="understanding core" />
+
+
+
+  
+
+</h3> 
+<h3><List text=" learning react " purpose="testing"/></h3>
+<h3><List text=" learning HTML " purpose="Testing"/></h3>
+<h3><List text=" learning react " purpose="Testing"/></h3>
+<h3><List text=" learning react " purpose="Testing"/></h3>
+<h3><List text=" learning react " purpose="Testing"/></h3>
+<h3><List text=" learning react " purpose="Testing"/></h3>
+<h3><List text=" learning react " purpose="Testing"/></h3>
+<h3><List text=" learning react " purpose="Testing"/></h3>
+
+     </div>
+
+
+
+
     </div>
   );
 }
